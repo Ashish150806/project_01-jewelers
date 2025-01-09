@@ -1,6 +1,7 @@
 body {
     margin: 0px;
     border: 0px;
+    background-color: #504f4f;
 }
 #navbar {
     
@@ -32,4 +33,21 @@ body {
 .navbar-buttons:hover {
     background-color: rgb(195, 114, 114);
     cursor: pointer;
+}
+#rotating-img {
+    justify-content: center; 
+    align-items: center;
+    opacity: .5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+
+}
+.h2 {
+    margin: 100px;
+    text-align: auto;
+    color: burlywood;
 }
