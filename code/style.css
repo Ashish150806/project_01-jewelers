@@ -1,16 +1,20 @@
-body {
+body, html {
     margin: 0px;
     border: 0px;
-    background-color: #504f4f;
+    background-color: #E5E1DA;
 }
 #navbar {
-    
-    height: 38px;
+    position: fixed;
+    height: 40px;
     display: flex;
     align-items: center;
-    color: rgb(255, 240, 203);
-    background-color: #333;
-    padding: 10px 20px;
+    color: rgb(62, 87, 92);
+    background-color: #B3C8CF;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+
+    
 }
 #navbar-left{
     display: flex;
@@ -21,12 +25,13 @@ body {
 #navbar-right{
     display: flex;
     margin-left: auto;
+    padding-right: 20px;
 }
-.navbar-buttons{
+.buttons{
 
     margin: 10px;
     padding: 0px 10px;
-    background-color: rgb(100, 100, 100);
+    background-color: rgb(51, 63, 66);
     color: rgb(255, 240, 203);
     border-radius: 3px;
 }
@@ -34,20 +39,45 @@ body {
     background-color: rgb(195, 114, 114);
     cursor: pointer;
 }
-#rotating-img {
-    justify-content: center; 
-    align-items: center;
-    opacity: .5;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-
+#home_banners {
+    opacity: .55;
+    margin-top: 40px;
+    width: 100%;
+    left:0px;
+    object-fit: cover;
 }
-.h2 {
+
+.content_box {
     margin: 100px;
     text-align: auto;
-    color: burlywood;
+    color: rgb(87, 115, 167);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* banners {
+    object-fit: cover;
+    width: 100%;
+} */
+
+.content_box{
+    z-index: 50;
+    background-color: #B3C8CF;
+    padding: 0px 25px;
+    margin: 50px;
+}
+.hr {
+    border: 0;
+    margin: 20px 0;
+    height: 10px;
+    background-color: #333;
+    padding: 5px;
 }
