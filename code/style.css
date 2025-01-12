@@ -79,3 +79,96 @@ a:hover {
     background-color: #333;
     padding: 5px;
 }
+
+/* user details input*/
+ body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+}
+.form-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+}
+.form-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+}
+.form-group {
+            margin-bottom: 15px;
+}
+.form-group label {
+            display: block;
+            margin-bottom: 5px;
+}
+        .form-group input[type="text"],
+        .form-group input[type="email"],
+        .form-group input[type="tel"] {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+}
+.form-group input[type="radio"] {
+            margin-right: 10px;
+}
+.form-group .gender-label {
+            display: inline-block;
+            margin-right: 20px;
+}
+ .form-group .gender-label input {
+            margin-right: 5px;
+}
+ .form-group button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+}
+ .form-group button:hover {
+            background-color: #0056b3;
+ }
+
+ /*cross ka button */
+
+ body{
+    margin:0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.close-button {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: #f00; 
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px; 
+    cursor: pointer;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+}
+
+.close-button{
+    background-color: #c00
+}
+
+
+
+
+
+            
