@@ -1,7 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+/* index styling */
+hr{
+    border-top: dotted 5px #ce4646
+}
+footer{
+    background-color:rgb(142, 125, 113);
+    width: auto;
+    height: 250px;
+    text-align: center;
+}
+.foot-link{
+    margin: 10px;
+    padding: 10px;
+}
+.foot-link a{
+    font-family: "Nunito Sans",serif;
+    font-size: 30px;
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+
+}
+.foot-link a:hover{
+    color: #dddae056;
+}
+.foot-copyright{
+    font-family: "Nunito Sans",serif;
+    margin: 0px;
+    padding: 0px;
+    font-size: 20px;
+    color: white;
+}
+/* styling by ashish hussain */
 body, html {
     margin: 0px;
     border: 0px;
-    background-color: #E5E1DA;
+    background-color: #aaa69e;
 }
 #navbar {
     position: fixed;
@@ -74,11 +110,6 @@ a:hover {
     padding: 0px 25px;
     margin: 50px;
 }
-.hr {
-    border: 0;
-    background-color: #333;
-    padding: 5px;
-}
 
 /* user details input*/
  /* body {
@@ -93,7 +124,7 @@ a:hover {
 .form-container {
             background-color: #fff;
             padding: 20px;
-            border-radius: 8px;
+            border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             width: 300px;
 }
@@ -165,9 +196,3 @@ a:hover {
 .close-button{
     background-color: #c00
 }
-
-
-
-
-
-            
