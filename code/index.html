@@ -6,13 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>PROJECT_01-JEWELERS</title>
+    <link rel="icon" type="image/x-icon" href="rotating-img.png" style="" >
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+        hr{
+            border-top: dotted 5px #ce4646
+        }
+        footer{
+            background-color:rgb(142, 125, 113);
+            width: auto;
+            height: 250px;
+            text-align: center;
+        }
+        .foot-link{
+            margin: 10px;
+            padding: 10px;
+        }
+        .foot-link a{
+            font-family: "Nunito Sans",serif;
+            font-size: 30px;
+            padding: 20px;
+            text-decoration: none;
+            color: white;
+            transition: color 0.3s;
+
+        }
+        .foot-link a:hover{
+            color: #dddae056;
+        }
+        .foot-copyright{
+            font-family: "Nunito Sans",serif;
+            margin: 0px;
+            padding: 0px;
+            font-size: 20px;
+            color: white;
+        }
+    </style>
 </head>
 
 <body>
     <header>
         <div id="navbar">
-            <div id=navbar-left>
-                <div><img src="logo.png" alt="logo" height="150px"></div>
+            <div id=navbar-left style="overflow: auto;">
+                <div ><img src="logo.png" alt="logo" height="150px"></div>
                 <div>
                     <h1>PROJECT_01-JEWELERS</h1>
                 </div>
@@ -34,16 +71,15 @@
         <img src="rotating-img.png" alt="rotating images" style="width: 100%; object-fit: cover;">
     </div>
     <div class="content_box">
-        <h2>Our Promises</h2>
+        <h2 style="padding:20px 0px">Our Promises</h2>
         <div style="display: flex;">
             <div style="width: 50%;">
-                <p>
+                <p style="padding: 0px 10px 20px ;">
                     | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris odio lectus, lobortis nec feugiat
                     eu, aliquam faucibus quam. Etiam pulvinar ipsum sit ame.
                     | In lacinia sedex in vestibulum. Etiam a nisl porttitor, sollicitudin felis eget, maximus mauris.
                     Nunc gravida tellus libero, quis fermentum nisi fermentum sed.
                     | Nullam convallis id lorem sed venenatis. In vitae velit sit amet est dapibus rutrum.
-                    |
                     | Proin vulputate magna sem, eu aliquet dui mattis vitae. Nam quis tempus nulla, id viverra tortor.
                     Sed quis ligula fringilla, placerat libero eget, venenatis ex.
                     | In at nisl semper,convallis lorem ac, molestie mauris. Ut eleifend sapien vitae risus tincidunt,
@@ -57,15 +93,15 @@
                     | Phasellus vel lorem est. Vestibulum aliquet laoreet erat non bibendum.
                 </p>
             </div>
-            <div style="width: 50%; background-color: aliceblue;">
-                <img src="rotating-img.png" alt="logo" height="150px">
+            <div style="width: 50%; background-color: ;padding: 0px 0px 40px;" >
+                <img src="rotating-img.png" alt="logo" height="100%" width="100%" style="border: solid 5px ;">
             </div>
         </div>
     </div>
     <div class="content_box" style="display: flex;">
-        <div style="width: 49.5%;">
+        <div style="width: 49.5%; border-right:dashed 2px ">
             <h3 style="align-content: center;">OUR MISSION</h3>
-            <div>
+            <div style="display: flex;padding: 0px 10px 0px 0px;">
                 <p>In at nisl semper,convallis lorem ac, molestie mauris. Ut eleifend sapien vitae risus tincidunt, non
                     volutpat dui maximus. Proin sed facilisis velit, a ullamcorp
                     In at nisl semper,convallis lorem ac, molestie mauris. Ut eleifend sapien vitae risus tincidunt, non
@@ -78,25 +114,9 @@
                 <a href="test.html" target="_blank">more info</a>
             </div>
         </div>
-        <div>
-            <pre>
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-
-        </pre>
-        </div>
         <div style="width: 49.5%;">
-            <h3>COUSTUMER FIRST</h3>
-            <div><p>
+            <h3 style="padding: 0px 0px 0px 10px">CUSTOMER FIRST</h3>
+            <div style="display: flex;padding: 0px 0px 0px 10px;"><p>
                 | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris odio lectus, lobortis nec feugiat eu,
                 aliquam faucibus quam. Etiam pulvinar ipsum sit ame.
                 | In lacinia sedex in vestibulum. Etiam a nisl porttitor, sollicitudin felis eget, maximus mauris. Nunc
@@ -112,15 +132,17 @@
             </div>
         </div>
     </div>
-
-    
-
-
+<hr >
     <footer>
-        <hr style="width: 100%;">
-        
-        
+        <div class="foot-link">
+            <a href="#">Privacy Policy</a>
+            <a href="#"> Terms & conditions</a>
+            <a href="#">Refund policy</a>
+        </div>
+            <div class="foot-copyright">
+                <p>&copy 2025 (jeweller name)</p>
+               <p>all rights are reserved</p>
+        </div>
     </footer>
 </body>
-
 </html>
