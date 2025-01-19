@@ -196,3 +196,50 @@ a:hover {
 .close-button{
     background-color: #c00
 }
+
+/* product page footer */
+.footer{
+    background-color: rgb(142, 125, 113);;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.footer-link{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 10px;
+}
+.footer-link a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+
+}
+.footer-links a:hover{
+    color: gold;
+
+}
+.footer-copyright{
+    font-size:14px ;
+    font-style: italic;
+
+}
+.footer::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height:2px;
+    background-color: gold;
+    margin: 0 auto 10px;
+}
+
+
