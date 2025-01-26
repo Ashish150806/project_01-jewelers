@@ -1,43 +1,39 @@
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap'); */
 /* index styling */
-hr{
+/* hr{
     border-top: dotted 5px #ce4646
-}
-footer{
-    background-color:rgb(142, 125, 113);
-    width: auto;
-    height: 250px;
+} */
+.footer {
+    background-color:rgb(62, 87, 92);;
+    color: #fff;
     text-align: center;
-}
-.foot-link{
-    margin: 10px;
-    padding: 10px;
-}
-.foot-link a{
-    font-family: "Nunito Sans",serif;
-    font-size: 30px;
-    padding: 20px;
-    text-decoration: none;
-    color: white;
-    transition: color 0.3s;
+    padding: 20px 0;
+    margin-top: auto;
+  }
 
-}
-.foot-link a:hover{
-    color: #dddae056;
-}
-.foot-copyright{
-    font-family: "Nunito Sans",serif;
-    margin: 0px;
-    padding: 0px;
-    font-size: 20px;
-    color: white;
-}
+  .footer p {
+    margin: 5px 0;
+  }
+
+  .footer a {
+    color: #ffa41c;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s;
+  }
+
+  .footer a:hover {
+    color: #cc8500;
+  }
+
+
+
 /* styling by ashish hussain */
 body, html {
     margin: 0px;
     border: 0px;
-    background-color: #aaa69e;
+    background-color: #2C3E50;
 }
 #navbar {
     position: fixed;
@@ -195,51 +191,6 @@ a:hover {
 
 .close-button{
     background-color: #c00
-}
-
-/* product page footer */
-.footer{
-    background-color: rgb(142, 125, 113);;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-    position: relative;
-    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
-
-}
-
-.footer-link{
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin-bottom: 10px;
-}
-.footer-link a{
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
-
-}
-.footer-links a:hover{
-    color: gold;
-
-}
-.footer-copyright{
-    font-size:14px ;
-    font-style: italic;
-
-}
-.footer::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80%;
-    height:2px;
-    background-color: gold;
-    margin: 0 auto 10px;
 }
 
 
