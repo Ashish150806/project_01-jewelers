@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>PROJECT_01-JEWELERS</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <head>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
     
 </head>
 
@@ -15,20 +22,20 @@
             <div id=navbar-left style="overflow: auto;">
                 <div><img src="logo.png" alt="logo" height="150px"></div>
                 <div>
-                    <h1>PROJECT_01-JEWELERS</h1>
+                    <h1 class="project_1 animate__animated animate__zoomIn">PROJECT_01-JEWELERS</h1>
                 </div>
             </div>
             <div id=navbar-right>
-                <div class="buttons">
+                <div class="buttons animate__animated animate__rotateInDownLeft">
                     <a href="index.html">Home</a>
                 </div>
-                <div class="buttons">
+                <div class="buttons animate__animated animate__rotateInDownLeft">
                     <a href="product.html">Products</a>
                 </div>
-                <div class="buttons">
+                <div class="buttons animate__animated animate__rotateInDownLeft">
                     <a href="aboutus.html">About Us</a>
                 </div>
-                <div class="buttons">
+                <div class="buttons animate__animated animate__rotateInDownLeft">
                     <a href="login.html">Login</a>
                 </div>
             </div>
@@ -37,7 +44,7 @@
     <div id=home_banners>
         <img src="https://th.bing.com/th/id/OIP.2TNTCYwMgbk26OPldHQZbwHaEQ?w=329&h=189&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="" style="width: 100%; object-fit: cover;">
     </div>
-    <div class="content_box">
+    <div class="content_box animate__animated animate__rotateInDownLeft">
         <h2 style="padding:20px 0px">Promises to Clients</h2>
         <div style="display: flex;">
             <div style="width: 50%; object-fit: fill;">
@@ -67,7 +74,7 @@
             </div>
         </div>
     </div>
-    <div class="content_box" style="display: flex;">
+    <div class="content_box animate__animated animate__zoomIn" style="display: flex;">
         <div style="width: 49.5%; border-right:dashed 2px ">
             <h3 style="align-content: center;">OUR MISSION</h3>
             <div style="display: flex;padding: 0px 10px 0px 0px;">
@@ -79,7 +86,7 @@
                     elementum eget, finibus ac mauris. Nunc cursus, tortor conseq
                     | libero ante Maecenas</p>
             </div>
-            <div class="buttons" style="width: max-content;">
+            <div class="buttons animate__animated animate__zoomIn" style="width: max-content;">
                 <a href="test.html" target="_blank">more info</a>
             </div>
         </div>
@@ -100,12 +107,12 @@
 
                 </p>
             </div>
-            <div class="buttons" style="width: max-content;">
+            <div class="buttons animate__animated animate__zoomIn" style="width: max-content;">
                 <a href="test.html" target="_blank">more info</a>
             </div>
         </div>
     </div>
-    <div class="content_box"  style="padding: 1px 20px 20px 20px;">
+    <div class="content_box animate__animated animate__zoomIn"  style="padding: 1px 20px 20px 20px;">
         <h2>Brand Promise</h2>
         <ul>
             <li> <b>100% Certified Precious Metals & Stones:</b> Guaranteed authenticity and superior quality.</li>
@@ -113,7 +120,7 @@
             <li> <b>On-Time Worldwide Delivery:</b> Reliable and timely shipping, wherever you are.</li>
         </ul>
     </div>
-    <div class="content_box" style="padding: 1px 20px 20px 20px;">
+    <div class="content_box animate__animated animate__zoomIn" style="padding: 1px 20px 20px 20px;">
         <h2>Exclusive Customization Options for Discerning Clients</h2>
         <p style="padding: 0px 50px 5px 20px ;">Our exclusive customization options are designed to cater to your brand’s specific needs, ensuring that every
             product aligns perfectly with your business requirements. Whether it's incorporating unique branding
@@ -128,13 +135,16 @@
         </p>
     </div>
     <hr>
-    <div class="footer">
+    <div class="footer animate__animated animate__flipInX">
         <p>&copy; 2025 PROJECT_01. All rights reserved.</p>
         <p>
           <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a> |
           <a href="#">Contact Us</a>
         </p>
     </div> 
+    <script>
+        new wow.init();
+    </script>
 </body>
 
 </html>
