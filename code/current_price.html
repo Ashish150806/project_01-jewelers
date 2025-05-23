@@ -33,7 +33,37 @@
             </div>
         </div>
     </header>
-    
+    <script>
+    var myHeaders = new Headers();
+    myHeaders.append("x-access-token", "goldapi-6b6smb12kcqk-io");
+    myHeaders.append("Content-Type", "application/json");
+
+    var requestOptions = {
+        method: 'GET',
+        headers: myHeaders,
+        redirect: 'follow'
+    };
+
+    fetch("https://www.goldapi.io/api/XAU/USD", requestOptions)
+        .then(response => response.json())
+        .then(data => {
+        console.log(data); // Check output
+        document.getElementById("gold-price").innerText = `Gold: $${data.price.toFixed(2)} per ounce`;
+        })
+        .catch(error => {
+        console.error('Error:', error);
+        document.getElementById("price-error").innerText = 'Unable to load gold price.';
+        });
+    </script>
+
+
+    <section style="margin: 20px;">
+    <h2>Live Gold Price</h2>
+    <p id="gold-price">Loading Gold Price...</p>
+    <p id="price-error" style="color: red;"></p>
+    </section>
+
+
 
 </body>
 </html>
