@@ -1,168 +1,115 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>test</title>
+    <title>Current Price</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        #navbar {
+            background-color: #f5f5f5;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .content_box {
+            flex: 1;
+            padding: 40px;
+        }
+        #gold-box {
+            background-color: #fffbea;
+            border: 2px solid gold;
+            border-radius: 10px;
+            padding: 20px;
+            width: fit-content;
+            margin: auto;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .footer {
+            background-color: #f5f5f5;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-     ckfilhzdgf ndaclc c agnuf wvsa...........cadg nvgcna akl...........
-</body>
+    <header>
+        <div id="navbar">
+            <div id="navbar-left" style="overflow: auto;">
+                <div><img src="logo.png" alt="logo" height="150px"></div>
+                <div>
+                    <h1 class="project_1 animate__animated animate__zoomIn">PROJECT_01-JEWELERS</h1>
+                </div>
+            </div>
+            <div id="navbar-right">
+                <div class="buttons animate__animated animate__rotateInDownLeft">
+                    <a href="index.html">Home</a>
+                </div>
+                <div class="buttons animate__animated animate__rotateInDownLeft">
+                    <a href="product.html">Products</a>
+                </div>
+                <div class="buttons animate__animated animate__rotateInDownLeft">
+                    <a href="current_price.html">Current Price</a>
+                </div>
+                <div class="buttons animate__animated animate__rotateInDownLeft">
+                    <a href="aboutus.html">About Us</a>
+                </div>
+                <div class="buttons animate__animated animate__rotateInDownLeft">
+                    <a href="login.html">Login</a>
+                </div>
+            </div>
+        </div>
+    </header>
 
-</html> -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Jewelry Retailer Login</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #fefefe url('https://images.unsplash.com/photo-1549488344-9f5c6ac91b1f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
-      height: 100vh;
-      margin: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      backdrop-filter: blur(5px);
-    }
+    <section class="content_box animate__animated animate__zoomIn">
+        <h2 style="text-align:center;">Live Gold Price</h2>
+        <div id="gold-box">
+            <p id="gold-price">Loading Gold Price...</p>
+            <p id="price-error" style="color: red;"></p>
+        </div>
+    </section>
 
-    .login-container {
-      background-color: rgba(255, 255, 255, 0.95);
-      padding: 2rem 3rem;
-      border-radius: 12px;
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-      max-width: 400px;
-      width: 100%;
-    }
+    <footer class="footer animate__animated animate__flipInX">
+        <p>&copy; 2025 PROJECT_01. All rights reserved.</p>
+        <p>
+            <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a> | <a href="#">Contact Us</a>
+        </p>
+    </footer>
 
-    .login-container h2 {
-      text-align: center;
-      margin-bottom: 1.5rem;
-      color: #a67c52;
-    }
+    <script>
+        new WOW().init();
 
-    .form-group {
-      margin-bottom: 1rem;
-    }
+        var myHeaders = new Headers();
+        myHeaders.append("x-access-token", "goldapi-6b6smb12kcqk-io");
+        myHeaders.append("Content-Type", "application/json");
 
-    .form-group label {
-      display: block;
-      margin-bottom: 0.5rem;
-      font-weight: 500;
-    }
+        var requestOptions = {
+            method: 'GET',
+            headers: myHeaders,
+            redirect: 'follow'
+        };
 
-    .form-group input {
-      width: 100%;
-      padding: 0.5rem;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      font-size: 1rem;
-    }
-
-    .form-group input:focus {
-      outline: none;
-      border-color: #a67c52;
-      box-shadow: 0 0 5px rgba(166, 124, 82, 0.5);
-    }
-
-    .submit-btn {
-      width: 100%;
-      padding: 0.75rem;
-      background-color: #a67c52;
-      border: none;
-      border-radius: 8px;
-      color: white;
-      font-size: 1rem;
-      font-weight: bold;
-      cursor: pointer;
-      transition: background 0.3s ease;
-    }
-
-    .submit-btn:hover {
-      background-color: #8c6239;
-    }
-
-    .error {
-      color: red;
-      font-size: 0.9rem;
-      display: none;
-    }
-  </style>
-</head>
-<body>
-  <div class="login-container">
-    <h2>Login to Jewelry World</h2>
-    <form id="loginForm">
-      <div class="form-group">
-        <label for="username">Username *</label>
-        <input type="text" id="username" required />
-        <div class="error" id="usernameError">Username is required</div>
-      </div>
-
-      <div class="form-group">
-        <label for="phone">Phone Number *</label>
-        <input type="tel" id="phone" required pattern="[0-9]{10}" />
-        <div class="error" id="phoneError">Enter a valid 10-digit phone number</div>
-      </div>
-
-      <div class="form-group">
-        <label for="email">Email *</label>
-        <input type="email" id="email" required />
-        <div class="error" id="emailError">Enter a valid email address</div>
-      </div>
-
-      <button type="submit" class="submit-btn">Login</button>
-    </form>
-  </div>
-
-  <script>
-    const form = document.getElementById("loginForm");
-    const username = document.getElementById("username");
-    const phone = document.getElementById("phone");
-    const email = document.getElementById("email");
-
-    const usernameError = document.getElementById("usernameError");
-    const phoneError = document.getElementById("phoneError");
-    const emailError = document.getElementById("emailError");
-
-    form.addEventListener("submit", function (e) {
-      let valid = true;
-
-      // Username check
-      if (username.value.trim() === "") {
-        usernameError.style.display = "block";
-        valid = false;
-      } else {
-        usernameError.style.display = "none";
-      }
-
-      // Phone number check
-      const phonePattern = /^[0-9]{10}$/;
-      if (!phonePattern.test(phone.value.trim())) {
-        phoneError.style.display = "block";
-        valid = false;
-      } else {
-        phoneError.style.display = "none";
-      }
-
-      // Email check
-      const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
-      if (!emailPattern.test(email.value.trim())) {
-        emailError.style.display = "block";
-        valid = false;
-      } else {
-        emailError.style.display = "none";
-      }
-
-      if (!valid) {
-        e.preventDefault();
-      } else {
-        alert("Login successful!");
-        e.preventDefault(); // Prevent form submission for demo purposes
-      }
-    });
-  </script>
+        fetch("https://www.goldapi.io/api/XAU/USD", requestOptions)
+            .then(response => response.json())
+            .then(data => {
+                console.log(data);
+                document.getElementById("gold-price").innerText = `Gold: $${data.price.toFixed(2)} per ounce`;
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                document.getElementById("price-error").innerText = 'Unable to load gold price.';
+            });
+    </script>
 </body>
 </html>
