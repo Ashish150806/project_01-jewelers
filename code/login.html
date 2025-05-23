@@ -6,7 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" type="text/css" href="style.css" />
   <title>PROJECT_01-JEWELERS</title>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
   <!-- Animate.css + WOW.js -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
@@ -15,43 +19,7 @@
   </script>
 
   <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #fefefe;
-    }
-
-    #navbar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1rem 2rem;
-      background-color: #fff7f0;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
-
-    #navbar-left {
-      display: flex;
-      align-items: center;
-      gap: 20px;
-    }
-
-    #navbar-right {
-      display: flex;
-      gap: 20px;
-    }
-
-    .buttons a {
-      text-decoration: none;
-      color: #8c6239;
-      font-weight: bold;
-      transition: color 0.3s ease;
-    }
-
-    .buttons a:hover {
-      color: #a67c52;
-    }
-
+    
     .login-container {
       max-width: 400px;
       margin: 3rem auto;
@@ -117,21 +85,32 @@
 
 <body>
   <header>
-    <div id="navbar">
-      <div id="navbar-left">
-        <div><img src="logo.png" alt="logo" height="100px" /></div>
-        <div>
-          <h1 class="project_1 animate__animated animate__zoomIn">PROJECT_01-JEWELERS</h1>
+        <div id="navbar">
+            <div id=navbar-left style="overflow: auto;">
+                <div><img src="logo.png" alt="logo" height="150px"></div>
+                <div>
+                    <h1 class="project_1 animate__animated animate__zoomIn">PROJECT_01-JEWELERS</h1>
+                </div>
+            </div>
+            <div id=navbar-right>
+                <div class="buttons animate__animated animate__rotateInDownLeft">
+                    <a href="index.html">Home</a>
+                </div>
+                <div class="buttons animate__animated animate__rotateInDownLeft">
+                    <a href="product.html">Products</a>
+                </div>
+                <div class="buttons animate__animated animate__rotateInDownLeft">
+                    <a href="current_price.html">Current Price</a>
+                </div>
+                <div class="buttons animate__animated animate__rotateInDownLeft">
+                    <a href="aboutus.html">About Us</a>
+                </div>
+                <div class="buttons animate__animated animate__rotateInDownLeft">
+                    <a href="login.html">Login</a>
+                </div>
+            </div>
         </div>
-      </div>
-      <div id="navbar-right">
-        <div class="buttons animate__animated animate__rotateInDownLeft"><a href="index.html">Home</a></div>
-        <div class="buttons animate__animated animate__rotateInDownLeft"><a href="product.html">Products</a></div>
-        <div class="buttons animate__animated animate__rotateInDownLeft"><a href="aboutus.html">About Us</a></div>
-        <div class="buttons animate__animated animate__rotateInDownLeft"><a href="login.html">Login</a></div>
-      </div>
-    </div>
-  </header>
+    </header>
 
   <!-- Login Form Section -->
   <div class="login-container animate__animated animate__fadeInUp">
