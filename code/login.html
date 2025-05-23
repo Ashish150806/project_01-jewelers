@@ -1,151 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Products</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-        body{
-            
-        margin-bottom: 15px;
-        padding: 0;
-        font-family: Arial, sans-serif;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        height: 100vh;
-        background: #2C3E50; 
-        background-color: (0,0,0,0.5);
-        overflow: hidden;
-        }
-      h2{
-        text-align: center;
-        margin-bottom: 20px;
-        color: #62728e;
-        font-size: 30px;
-        font-style: italic;
-        font-family: "Pacifico", serif;
-        padding: 0px 0px 0px 0px;
-      }
-        .form-container{
-            overflow: auto;
-            border-radius: 10px;
-            width: 300px;
-            box-shadow: 0 1px 3px;
-            background-color: #eae1e1;
-            margin: 0px;
-            padding: 50px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            animation:  1s ease-in-out;
-        }
-        form{
-            width:100%;
-          
-        }
-        .gender-label{
-            display: inline-block;
-            margin-right: 20px;
-        }
-        .gender-label input{
-            margin-right: 5px;
-        }
-        hr{
-        border-top: dotted 5px #ce4646;
-        }
-        label{
-            font-weight: 600;
-            font-family: "Nunito Sans", serif;
-            color:rgb(17, 79, 134);
-            pointer-events: none;
-        }
-        input{
-            box-sizing: border-box;
-            border-radius: 8px;
-            width: 100%;
-            padding: 10px;
-            font-size: 16px;
-            border:none;
-            background:rgb(255, 251, 251);
-        }
-        
-        button{
-            width: 100%;
-            padding: 10px;
-            background: #2575fc;
-            color: #ffffff;
-            font-size: 16px;
-            font-weight: bold;
-            text-transform: uppercase;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background 0.3s ease;
-        }
-        .radio-input{
-            float: left;
-        }
-        .radio-label{
-            float: left;
-            margin-right: 3%;
-            padding:0px 0px 0px 0px;
-            text-align: center;
-            align-items: center;
-            margin: 0px 0px 0px 0px ;
-            color: #333;
-        }
-      
-    </style>
-</head>
-<body  >
-    <div class="form-container">
-       
-        <form>
-            <h2 >Enter your details</h2>
-            <div class="form-group">
-                <label for="username">Username</label>
-                <input type="text" id="username" name="username" placeholder="Enter Your Username" required>
-            </div>
-            <div class="form-group">
-                <label>Gender</label>
-                <div class="gender-label">
-                    <input type="radio" id="male" name="gender" value="male" required>
-                    <label for="male" >Male</label>
-                </div>
-                <div class="gender-label">
-                    <input type="radio" id="female" name="gender" value="female" required>
-                    <label for="female">Female</label>
-                </div>
-            </div>
-            <div class="form-group">
-                <label for="phone">Phone</label>
-                <input type="tel" id="phone" name="phone" placeholder="Enter Your Phone" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="Enter Your E-mail" required>
-            </div>
-            <div class="form-group">
-                <button type="submit">Submit</button>
-            </div>
-            <hr>
-            <div class="return">
-                <button type="submit"><a href="index.html">return to home</a></button>
-            </div>
-        </form>
-    </div>
- <!-- loginfooter -->
-    <div class="footer">
-        <p>&copy; 2025 PROJECT_01. All rights reserved.</p>
-        <p>
-          <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a> |
-          <a href="#">Contact Us</a>
-        </p>
-    </div> 
 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <title>PROJECT_01-JEWELERS</title>
+
+  <!-- Animate.css + WOW.js -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fefefe;
+    }
+
+    #navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #fff7f0;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    #navbar-left {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    #navbar-right {
+      display: flex;
+      gap: 20px;
+    }
+
+    .buttons a {
+      text-decoration: none;
+      color: #8c6239;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    .buttons a:hover {
+      color: #a67c52;
+    }
+
+    .login-container {
+      max-width: 400px;
+      margin: 3rem auto;
+      background-color: rgba(255, 255, 255, 0.95);
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      animation: fadeInUp 1s;
+    }
+
+    .login-container h2 {
+      text-align: center;
+      color: #a67c52;
+      margin-bottom: 1.5rem;
+    }
+
+    .form-group {
+      margin-bottom: 1rem;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 500;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    .form-group input:focus {
+      border-color: #a67c52;
+      outline: none;
+    }
+
+    .submit-btn {
+      width: 100%;
+      padding: 0.75rem;
+      background-color: #a67c52;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .submit-btn:hover {
+      background-color: #8c6239;
+    }
+
+    .error {
+      color: red;
+      font-size: 0.9rem;
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div id="navbar">
+      <div id="navbar-left">
+        <div><img src="logo.png" alt="logo" height="100px" /></div>
+        <div>
+          <h1 class="project_1 animate__animated animate__zoomIn">PROJECT_01-JEWELERS</h1>
+        </div>
+      </div>
+      <div id="navbar-right">
+        <div class="buttons animate__animated animate__rotateInDownLeft"><a href="index.html">Home</a></div>
+        <div class="buttons animate__animated animate__rotateInDownLeft"><a href="product.html">Products</a></div>
+        <div class="buttons animate__animated animate__rotateInDownLeft"><a href="aboutus.html">About Us</a></div>
+        <div class="buttons animate__animated animate__rotateInDownLeft"><a href="login.html">Login</a></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Login Form Section -->
+  <div class="login-container animate__animated animate__fadeInUp">
+    <h2>User Login</h2>
+    <form id="loginForm">
+      <div class="form-group">
+        <label for="username">Username *</label>
+        <input type="text" id="username" required />
+        <div class="error" id="usernameError">Username is required</div>
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone Number *</label>
+        <input type="tel" id="phone" required pattern="[0-9]{10}" />
+        <div class="error" id="phoneError">Enter a valid 10-digit phone number</div>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email *</label>
+        <input type="email" id="email" required />
+        <div class="error" id="emailError">Enter a valid email address</div>
+      </div>
+
+      <button type="submit" class="submit-btn">Login</button>
+    </form>
+  </div>
+
+  <script>
+    const form = document.getElementById("loginForm");
+    const username = document.getElementById("username");
+    const phone = document.getElementById("phone");
+    const email = document.getElementById("email");
+
+    const usernameError = document.getElementById("usernameError");
+    const phoneError = document.getElementById("phoneError");
+    const emailError = document.getElementById("emailError");
+
+    form.addEventListener("submit", function (e) {
+      let valid = true;
+
+      if (username.value.trim() === "") {
+        usernameError.style.display = "block";
+        valid = false;
+      } else {
+        usernameError.style.display = "none";
+      }
+
+      if (!/^[0-9]{10}$/.test(phone.value.trim())) {
+        phoneError.style.display = "block";
+        valid = false;
+      } else {
+        phoneError.style.display = "none";
+      }
+
+      if (!/^[^ ]+@[^ ]+\.[a-z]{2,3}$/.test(email.value.trim())) {
+        emailError.style.display = "block";
+        valid = false;
+      } else {
+        emailError.style.display = "none";
+      }
+
+      if (!valid) {
+        e.preventDefault();
+      } else {
+        alert("Login successful!");
+        e.preventDefault(); // Demo purpose only
+      }
+    });
+  </script>
 </body>
 </html>
