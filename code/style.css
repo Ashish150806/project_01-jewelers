@@ -4,6 +4,12 @@
 /* hr{
     border-top: dotted 5px #ce4646
 } */
+ html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
 .footer {
     background-color:rgb(62, 87, 92);
     color: #fff;
@@ -14,6 +20,7 @@
 
   .footer p {
     margin: 5px 0;
+
   }
 
   .footer a {
