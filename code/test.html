@@ -1,115 +1,155 @@
 <!-- <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Current Price</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <style>
-        body {
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
-        #navbar {
-            background-color: #f5f5f5;
-            padding: 10px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .content_box {
-            flex: 1;
-            padding: 40px;
-        }
-        #gold-box {
-            background-color: #fffbea;
-            border: 2px solid gold;
-            border-radius: 10px;
-            padding: 20px;
-            width: fit-content;
-            margin: auto;
-            text-align: center;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .footer {
-            background-color: #f5f5f5;
-            padding: 20px;
-            text-align: center;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <title>About Us</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    main {
+      flex: 1;
+      padding: 20px;
+      background-color: #f4f4f4;
+    }
+
+    footer {
+      background-color: #2c4b50;
+      color: #f3a847;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    footer a {
+      color: #f3a847;
+      text-decoration: none;
+      margin: 0 8px;
+    }
+
+    #navbar {
+      background-color: #cce7f2;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+    }
+
+    #navbar-left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    #navbar-right {
+      display: flex;
+      gap: 10px;
+    }
+
+    .buttons a {
+      background-color: #1e3a4c;
+      color: white;
+      padding: 5px 10px;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+
+    .team-container {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      margin-top: 40px;
+    }
+
+    .member-card {
+      background-color: white;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      width: 280px;
+      text-align: center;
+    }
+
+    .member-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .member-card h3 {
+      margin-top: 10px;
+      margin-bottom: 5px;
+      color: #333;
+    }
+
+    .member-card p {
+      font-size: 14px;
+      color: #555;
+    }
+  </style>
 </head>
 <body>
+  <div class="wrapper">
     <header>
-        <div id="navbar">
-            <div id="navbar-left" style="overflow: auto;">
-                <div><img src="logo.png" alt="logo" height="150px"></div>
-                <div>
-                    <h1 class="project_1 animate__animated animate__zoomIn">PROJECT_01-JEWELERS</h1>
-                </div>
-            </div>
-            <div id="navbar-right">
-                <div class="buttons animate__animated animate__rotateInDownLeft">
-                    <a href="index.html">Home</a>
-                </div>
-                <div class="buttons animate__animated animate__rotateInDownLeft">
-                    <a href="product.html">Products</a>
-                </div>
-                <div class="buttons animate__animated animate__rotateInDownLeft">
-                    <a href="current_price.html">Current Price</a>
-                </div>
-                <div class="buttons animate__animated animate__rotateInDownLeft">
-                    <a href="aboutus.html">About Us</a>
-                </div>
-                <div class="buttons animate__animated animate__rotateInDownLeft">
-                    <a href="login.html">Login</a>
-                </div>
-            </div>
+      <div id="navbar">
+        <div id="navbar-left">
+          <div><img src="logo.png" alt="logo" height="80px"></div>
+          <div>PROJECT_01-JEWELERS</div>
         </div>
+        <div id="navbar-right">
+          <div class="buttons"><a href="index.html">Home</a></div>
+          <div class="buttons"><a href="product.html">Products</a></div>
+          <div class="buttons animate__animated animate__rotateInDownLeft">
+            <a href="current_price.html">Current Price</a>
+          </div>
+          <div class="buttons"><a href="aboutus.html">About Us</a></div>
+          <div class="buttons"><a href="login.html">Login</a></div>
+        </div>
+      </div>
     </header>
 
-    <section class="content_box animate__animated animate__zoomIn">
-        <h2 style="text-align:center;">Live Gold Price</h2>
-        <div id="gold-box">
-            <p id="gold-price">Loading Gold Price...</p>
-            <p id="price-error" style="color: red;"></p>
+    <main>
+      <h1 style="text-align:center;">Meet Our Developers</h1>
+      <div class="team-container">
+        <div class="member-card">
+          <img src="WIN_20240820_09_08_34_Pro.jpg" alt="Developer 1">
+          <h3>Ashish Kumar</h3>
+          <p>Ashish is a passionate front-end developer skilled in HTML, CSS, and JavaScript. He ensures that the user interface is both functional and visually appealing.</p>
         </div>
-    </section>
+        <div class="member-card">
+          <img src="c50039ce-40d9-48ff-800d-526940ac38e7.png" alt="Developer 2">
+          <h3>Yashvardhan</h3>
+          <p>Yashvardhan is the project coordinator and full-stack developer who manages the team’s workflow and handles the backend using modern frameworks.</p>
+        </div>
+        <div class="member-card">
+          <img src="e1054f70-eadb-451d-8ba8-52e90d75ee49.png" alt="Developer 3">
+          <h3>Aditya</h3>
+          <p>Aditya is the UX designer and tester of the team. He works on wireframes, testing the UI for usability, and making improvements based on feedback.</p>
+        </div>
+      </div>
+    </main>
 
-    <footer class="footer animate__animated animate__flipInX">
+    <footer>
+      <div class="footer animate__animated animate__flipInX">
         <p>&copy; 2025 PROJECT_01. All rights reserved.</p>
         <p>
-            <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a> | <a href="#">Contact Us</a>
+          <a href="#">Privacy Policy</a> |
+          <a href="#">Terms of Service</a> |
+          <a href="#">Contact Us</a>
         </p>
+      </div>
     </footer>
-
-    <script>
-        new WOW().init();
-
-        var myHeaders = new Headers();
-        myHeaders.append("x-access-token", "goldapi-6b6smb12kcqk-io");
-        myHeaders.append("Content-Type", "application/json");
-
-        var requestOptions = {
-            method: 'GET',
-            headers: myHeaders,
-            redirect: 'follow'
-        };
-
-        fetch("https://www.goldapi.io/api/XAU/USD", requestOptions)
-            .then(response => response.json())
-            .then(data => {
-                console.log(data);
-                document.getElementById("gold-price").innerText = `Gold: $${data.price.toFixed(2)} per ounce`;
-            })
-            .catch(error => {
-                console.error('Error:', error);
-                document.getElementById("price-error").innerText = 'Unable to load gold price.';
-            });
-    </script>
+  </div>
 </body>
 </html> -->
