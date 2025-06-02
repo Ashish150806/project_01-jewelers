@@ -7,10 +7,7 @@
   <link rel="stylesheet" type="text/css" href="style.css" />
   <title>PROJECT_01-JEWELERS</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <!-- Animate.css + WOW.js -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
@@ -19,7 +16,6 @@
   </script>
 
   <style>
-    
     .login-container {
       max-width: 400px;
       margin: 3rem auto;
@@ -85,32 +81,34 @@
 
 <body>
   <header>
-        <div id="navbar">
-            <div id=navbar-left style="overflow: auto;">
-                <div><img src="logo.png" alt="logo" height="150px"></div>
-                <div>
-                    <h1 class="project_1 animate__animated animate__zoomIn">PROJECT_01-JEWELERS</h1>
-                </div>
-            </div>
-            <div id=navbar-right>
-                <div class="buttons animate__animated animate__rotateInDownLeft">
-                    <a href="index.html">Home</a>
-                </div>
-                <div class="buttons animate__animated animate__rotateInDownLeft">
-                    <a href="product.html">Products</a>
-                </div>
-                <div class="buttons animate__animated animate__rotateInDownLeft">
-                    <a href="current_price.html">Current Price</a>
-                </div>
-                <div class="buttons animate__animated animate__rotateInDownLeft">
-                    <a href="aboutus.html">About Us</a>
-                </div>
-                <div class="buttons animate__animated animate__rotateInDownLeft">
-                    <a href="login.html">Login</a>
-                </div>
-            </div>
+    <div id="top"><br></div>
+    <a href="#top" class="backToTop">⬆️</a>
+    <div id="navbar">
+      <div id=navbar-left style="overflow: auto;">
+        <div><img src="logo.png" alt="logo" height="150px"></div>
+        <div>
+          <h1 class="project_1 animate__animated animate__zoomIn">PROJECT_01-JEWELERS</h1>
         </div>
-    </header>
+      </div>
+      <div id=navbar-right>
+        <div class="buttons animate__animated animate__rotateInDownLeft">
+          <a href="index.html">Home</a>
+        </div>
+        <div class="buttons animate__animated animate__rotateInDownLeft">
+          <a href="product.html">Products</a>
+        </div>
+        <div class="buttons animate__animated animate__rotateInDownLeft">
+          <a href="current_price.html">Current Price</a>
+        </div>
+        <div class="buttons animate__animated animate__rotateInDownLeft">
+          <a href="aboutus.html">About Us</a>
+        </div>
+        <div class="buttons animate__animated animate__rotateInDownLeft">
+          <a href="login.html">Login</a>
+        </div>
+      </div>
+    </div>
+  </header>
 
   <!-- Login Form Section -->
   <div class="login-container animate__animated animate__fadeInUp">
@@ -138,55 +136,57 @@
     </form>
   </div>
   <div class="footer animate__animated animate__flipInX">
-        <p>&copy; 2025 PROJECT_01. All rights reserved.</p>
-        <p>
-          <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a> |
-          <a href="#">Contact Us</a>
-        </p>
-    </div> 
-    </html>
+    <p>&copy; 2025 PROJECT_01. All rights reserved.</p>
+    <p>
+      <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a> |
+      <a href="#">Contact Us</a>
+    </p>
+  </div>
 
-  <script>
-    const form = document.getElementById("loginForm");
-    const username = document.getElementById("username");
-    const phone = document.getElementById("phone");
-    const email = document.getElementById("email");
+</html>
 
-    const usernameError = document.getElementById("usernameError");
-    const phoneError = document.getElementById("phoneError");
-    const emailError = document.getElementById("emailError");
+<script>
+  const form = document.getElementById("loginForm");
+  const username = document.getElementById("username");
+  const phone = document.getElementById("phone");
+  const email = document.getElementById("email");
 
-    form.addEventListener("submit", function (e) {
-      let valid = true;
+  const usernameError = document.getElementById("usernameError");
+  const phoneError = document.getElementById("phoneError");
+  const emailError = document.getElementById("emailError");
 
-      if (username.value.trim() === "") {
-        usernameError.style.display = "block";
-        valid = false;
-      } else {
-        usernameError.style.display = "none";
-      }
+  form.addEventListener("submit", function (e) {
+    let valid = true;
 
-      if (!/^[0-9]{10}$/.test(phone.value.trim())) {
-        phoneError.style.display = "block";
-        valid = false;
-      } else {
-        phoneError.style.display = "none";
-      }
+    if (username.value.trim() === "") {
+      usernameError.style.display = "block";
+      valid = false;
+    } else {
+      usernameError.style.display = "none";
+    }
 
-      if (!/^[^ ]+@[^ ]+\.[a-z]{2,3}$/.test(email.value.trim())) {
-        emailError.style.display = "block";
-        valid = false;
-      } else {
-        emailError.style.display = "none";
-      }
+    if (!/^[0-9]{10}$/.test(phone.value.trim())) {
+      phoneError.style.display = "block";
+      valid = false;
+    } else {
+      phoneError.style.display = "none";
+    }
 
-      if (!valid) {
-        e.preventDefault();
-      } else {
-        alert("Login successful!");
-        e.preventDefault(); // Demo purpose only
-      }
-    });
-  </script>
+    if (!/^[^ ]+@[^ ]+\.[a-z]{2,3}$/.test(email.value.trim())) {
+      emailError.style.display = "block";
+      valid = false;
+    } else {
+      emailError.style.display = "none";
+    }
+
+    if (!valid) {
+      e.preventDefault();
+    } else {
+      alert("Login successful!");
+      e.preventDefault(); // Demo purpose only
+    }
+  });
+</script>
 </body>
+
 </html>
