@@ -6,168 +6,75 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" type="text/css" href="style.css" />
   <title>About Us</title>
-  <style>
-    html,
-    body {
-      height: 100%;
-      margin: 0;
-      font-family: Arial, sans-serif;
-    }
-
-    .wrapper {
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-    }
-
-    main {
-      flex: 1;
-      padding: 20px;
-      background-color: #f4f4f4;
-    }
-
-    footer {
-      background-color: #2c4b50;
-      color: #f3a847;
-      text-align: center;
-      padding: 10px 0;
-    }
-
-    footer a {
-      color: #f3a847;
-      text-decoration: none;
-      margin: 0 8px;
-    }
-
-    .navbar {
-      background-color: #cce7f2;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px;
-    }
-
-    #navbar-left {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-
-    #navbar-right {
-      display: flex;
-      gap: 10px;
-    }
-
-    .buttons {
-
-
-      margin: 10px;
-      padding: 0px 10px;
-      background-color: rgb(51, 63, 66);
-      color: rgb(255, 240, 203);
-      border-radius: 3px;
-    }
-
-
-    .team-container {
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-      flex-wrap: wrap;
-      margin-top: 40px;
-    }
-
-    .member-card {
-      background-color: white;
-      padding: 15px;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-      width: 280px;
-      text-align: center;
-    }
-
-    .member-card img {
-      width: 100%;
-      height: auto;
-      border-radius: 10px;
-    }
-
-    .member-card h3 {
-      margin-top: 10px;
-      margin-bottom: 5px;
-      color: #333;
-    }
-
-    .member-card p {
-      font-size: 14px;
-      color: #555;
-    }
-  </style>
 </head>
 
 <body>
-  <div id="top"><br></div>
- <a href="#top" class = "backToTop">⬆️</a>
-  <div class="wrapper">
-    <header>
-      <div id="navbar">
-        <div id="navbar-left">
-          <div><img src="logo.png" alt="logo" height="80px"></div>
-          <div>PROJECT_01-JEWELERS</div>
-        </div>
-        <div id="navbar-right">
-          <div class="buttons"><a href="index.html">Home</a></div>
-          <div class="buttons"><a href="product.html">Products</a></div>
-          <div class="buttons animate__animated animate__rotateInDownLeft">
-            <a href="current_price.html">Current Price</a>
-          </div>
-          <div class="buttons"><a href="aboutus.html">About Us</a></div>
-          <div class="buttons"><a href="login.html">Login</a></div>
-        </div>
-      </div>
-    </header>
 
-    <main>
-      <h1 style="text-align:center;">Meet Our Developers</h1>
-      <div class="team-container">
-        <div class="member-card">
-          <!-- <img src="https://photos.google.com/search/CgxBc2hpc2ggS3VtYXIaKQonQUYxUWlwUHNiYUdReUxXQTZ6SFo5TjdUTUVoRXgyYVNlWWlWbVk4IjESLwotCisKKRInQUYxUWlwUHNiYUdReUxXQTZ6SFo5TjdUTUVoRXgyYVNlWWlWbVk4KIT0mI3wMg%3D%3D/photo/AF1QipPWTUZ9YcnyGFe3wGFgQWBHgxCtTvNkAWVfrBIE" alt="Developer 1"> -->
-          <h3>Ashish</h3>
-          <p>Ashish is a passionate front-end developer skilled in HTML, CSS, and JavaScript. He ensures that the user
-            interface is both functional and visually appealing.</p>
-        </div>
-        <div class="member-card">
-          <!-- <img src="https://your-image-link.png" alt="Ashish Kumar"> -->
-          <!-- " alt="Developer 2"> -->
-          <h3>HUSSAIN</h3>
-          <p>HUSSAIN is the project coordinator and full-stack developer who manages the team’s workflow and handles the
-            backend using modern frameworks.</p>
-        </div>
-        <div class="member-card">
-          <!-- <img src="e1054f70-eadb-451d-8ba8-52e90d75ee49.png" alt="Developer 3"> -->
-          <h3>ANKIT</h3>
-          <p>ANKIT is the UX designer and tester of the team. He works on wireframes, testing the UI for usability, and
-            making improvements based on feedback.</p>
-        </div>
+  <div id="top"><br></div>
+  <a href="#top" class="backToTop">⬆️</a>
+
+  <header>
+    <div id="navbar">
+      <div id="navbar-left">
+        <div><img src="logo.png" alt="logo" height="80px"></div>
+        <div>PROJECT_01-JEWELERS</div>
       </div>
+      <div id="navbar-right">
+        <div class="buttons"><a href="index.html">Home</a></div>
+        <div class="buttons"><a href="product.html">Products</a></div>
+        <div class="buttons ">
+          <a href="current_price.html">Current Price</a>
+        </div>
+        <div class="buttons"><a href="aboutus.html">About Us</a></div>
+        <div class="buttons"><a href="login.html">Login</a></div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <h1 style="text-align:center;">Meet Our Developers</h1>
+    <section class="team-container">
+      <div class="member-card">
+        <h3>Ashish</h3>
+        <p>Ashish is a passionate front-end developer skilled in HTML, CSS, and JavaScript. He ensures that the user
+          interface is both functional and visually appealing.</p>
+      </div>
+
+      <div class="member-card">
+        <h3>HUSSAIN</h3>
+        <p>HUSSAIN is the project coordinator and full-stack developer who manages the team’s workflow and handles the
+          backend using modern frameworks.</p>
+      </div>
+
+      <div class="member-card">
+        <h3>ANKIT</h3>
+        <p>ANKIT is the UX designer and tester of the team. He works on wireframes, testing the UI for usability, and
+          making improvements based on feedback.</p>
+      </div>
+    </section>
+    
+    <section>
+
       <h3><span style="text-decoration-line: line-through;">Location</span> Self shoutOut huhh??</h3>
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3484.3169560574183!2d77.1182376!3d28.749985899999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d01273846edf5%3A0x6c357f135c711e0f!2sMechanical%20Engineering%20Department!5e1!3m2!1sen!2sin!4v1748808915358!5m2!1sen!2sin"
         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </main>
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+      
+    </section>
+  </main>
 
-    <footer>
-      <div class="footer animate__animated animate__flipInX">
-        <p>&copy; 2025 PROJECT_01. All rights reserved.</p>
-        <p>
-          <a href="#">Privacy Policy</a> |
-          <a href="#">Terms of Service</a> |
-          <a href="#">Contact Us</a>
-        </p>
-      </div>
-    </footer>
-  </div>
+  <footer>
+    <div class="footer">
+      <p>&copy; 2025 PROJECT_01. All rights reserved.</p>
+      <p>
+        <a href="#">Privacy Policy</a> |
+        <a href="#">Terms of Service</a> |
+        <a href="#">Contact Us</a>
+      </p>
+    </div>
+  </footer>
 </body>
 
 </html>
