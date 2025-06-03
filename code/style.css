@@ -1,20 +1,16 @@
-
 @keyframes buttons {
     0% {
         scale: 1;
     }
-
     50% {
-        sscale: 1.275;
+        scale: 1.275;
         transform: none;
         border-radius: 0%;
     }
-
     100% {
         scale: 1.275;
         transform: rotate(360deg);
         border-radius: 50%;
-
     }
 }
 
@@ -26,22 +22,14 @@
     background-color: rgb(51, 63, 66);
     color: rgb(255, 240, 203);
     border-radius: 3px;
-    animation: buttons;
-    animation-duration: 0.5s;
-    animation-timing-function: ease;
-    animation-iteration-count: 1;
-    animation-play-state: paused;
-    animation-direction: normal;
-    animation-timing-function: linear;
-    animation-fill-mode: backwards;
+    transition: background-color 0.3s ease;
 }
 
 .buttons:hover {
     background-color: rgb(195, 114, 114);
     cursor: pointer;
-    animation-play-state: running;
+    animation: buttons 0.5s linear 1 backwards;
 }
-
 .backToTop {
     position: fixed;
     bottom: 20px;
