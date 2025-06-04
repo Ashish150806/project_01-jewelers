@@ -16,11 +16,12 @@
     "url": "https://github.com/Ashish150806/project_01-jewelers/issues"
   },
   "homepage": "https://github.com/Ashish150806/project_01-jewelers#readme",
-  "description": "",
   "dependencies": {
+    "bcryptjs": "^3.0.2",
     "body-parser": "^2.2.0",
     "cors": "^2.8.5",
     "express": "^5.1.0",
     "mongoose": "^8.15.1"
-  }
+  },
+  "description": ""
 }
